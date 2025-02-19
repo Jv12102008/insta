@@ -1,5 +1,20 @@
 .content_tab_one{
 margin-inline: auto;
-
     width: 60%;
+}
+
+@media (max-width: 935px){
+
+    .content_tab_one {
+        width: 90%;
+      }
+    
+      .parte2 {
+        display: none;
+      }
+}
+@media (max-width: 626px) {
+    .content_tab_one{
+        width: 100%;
+    }
 }

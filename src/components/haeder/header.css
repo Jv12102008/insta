@@ -74,14 +74,7 @@
     align-items: center;
     gap: 52px;
   }
-  .parte1 {
-    width: 100%;
-  }
-
-  .parte2 {
-    display: none;
-  }
-
+ 
   header nav {
     width: 100%;
   }
