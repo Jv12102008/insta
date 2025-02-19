@@ -1,0 +1,143 @@
+.App-header {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 1);
+  border-bottom: solid 1px rgba(219, 219, 219, 1);
+}
+.App-header nav {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.App-header nav ul li {
+  display: flex;
+  text-decoration: none;
+}
+.App-header nav ul {
+  width: 100%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.soon-grup {
+  width: 30%;
+  padding: 2px;
+  align-items: center;
+  display: flex;
+  gap: 5px;
+}
+.header-soon-img {
+  width: 40px;
+  height: 20px;
+}
+.header-soon-name {
+  border-left: 2px solid gray;
+  width: 100px;
+  height: 30px;
+}
+.box_look_for{
+  width: 20%;
+}
+.App-header nav ul li .look_for {
+  width: 100%;
+  border-radius: 4px;
+  justify-content: center;
+}
+.icon {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 50px;
+  height: 30px;
+}
+
+@media (max-width: 935px) {
+  .icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 20px;
+    gap: 4px;
+  }
+  .App-header nav ul {
+    width: 100%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 52px;
+  }
+  .parte1 {
+    width: 100%;
+  }
+
+  .parte2 {
+    display: none;
+  }
+
+  header nav {
+    width: 100%;
+  }
+}
+
+@media (max-width: 626px) {
+  .icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 20px;
+    display: none;
+  }
+
+  .visible {
+    display: ruby;
+  }
+  .soon-grup {
+    padding: 2px;
+    align-items: center;
+    display: flex;
+  }
+  .header-soon-name {
+    border: none;
+    margin-left: 130px;
+  }
+
+  button {
+    display: none;
+  }
+
+  .part1 {
+    display: block;
+    display: flex;
+  }
+
+  header nav ul {
+    display: flex;
+    gap: 5%;
+  
+  }
+
+  .logo {
+    margin-left: 130px;
+    margin-right: 130px;
+  }
+
+  footer {
+    display: ruby;
+  }
+
+  footer nav {
+    width: 100%;
+    height: 30px;
+    display: ruby;
+  }
+}
