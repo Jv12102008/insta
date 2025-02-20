@@ -1,0 +1,56 @@
+a{
+    text-decoration: none;
+    color: blue;
+}
+#profile img {
+    width: 130px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+#profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+.name {
+    color: #120202a8;
+}
+
+.information {
+    margin-left: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.information strong a {
+    text-decoration: none;
+    color: black;
+}
+.information strong a:hover {
+    color: rgb(75, 75, 75);
+}
+
+.suggestion {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.suggestion strong a:hover {
+    color: rgb(5, 5, 75);
+}
+.profile img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.profile {
+    display: flex;
+    margin-left: 15px;
+}
