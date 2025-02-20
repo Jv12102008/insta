@@ -21,6 +21,7 @@ import paper_post from "./img/paper-plane-outline.svg";
 
 const api_post = [
   {
+    id:1,
     img_account: rafa,
     name_account: "rafasimasguitarra",
     url_img: "https://static5.depositphotos.com/1005454/486/i/450/depositphotos_4868838-stock-photo-man-playing-electrical-guitar-black.jpg",
@@ -28,6 +29,7 @@ const api_post = [
     name_liked: "AndreLuiz",
   },
   {
+    id:2,
     img_account: alex,
     name_account: "a2_pessoal",
     url_img: img_post_alex,
@@ -35,6 +37,7 @@ const api_post = [
     name_liked: "rafasimasguitarra",
   },
   {
+    id:3,
     img_account: adriana,
     name_account: "Adriana",
     url_img: "https://www.feriasbrasil.com.br/fotosfb/835320241-MOB.jpg",
@@ -42,6 +45,7 @@ const api_post = [
     name_liked: "Andre-Luiz",
   },
   {
+    id:4,
     img_account: mara,
     name_account: "Mara",
     url_img: img_post_mara,
@@ -49,6 +53,7 @@ const api_post = [
     name_liked: "Adriana",
   },
   {
+    id:5,
     img_account: andre_luis,
     name_account: "Andre_Luiz",
     url_img: img_post_andre,
@@ -56,6 +61,7 @@ const api_post = [
     name_liked: "Mara",
   },
   {
+    id:6,
     img_account: adri_zig,
     name_account: "drileahy",
     url_img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkkONDaLOxPHQufRBq8Wrs2nhQK8crHgOFUw&s",
@@ -63,6 +69,7 @@ const api_post = [
     name_liked: "Andre_Luiz",
   },
   {
+    id:7,
     img_account: zig,
     name_account: "guileahy09",
     url_img: "https://i.ytimg.com/vi/YMvJrwJquvc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCnpiERkyBTXOjGVnliJ0CVUo-FDQ",
@@ -70,6 +77,7 @@ const api_post = [
     name_liked: "drileahy",
   },
   {
+    id:8,
     img_account: jaiminho,
     name_account: "jaiminhomoedas",
     url_img: "https://t.ctcdn.com.br/EQYv3V-iLosDLVqBJo4vF9WkOIU=/640x360/smart/i238599.jpeg",
@@ -77,6 +85,7 @@ const api_post = [
     name_liked: "guileahy09",
   },
   {
+    id:9,
     img_account: vini,
     name_account: "_vini.nery",
     url_img: "https://occ-0-8407-90.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABd3Pmtpet40yr5vkdSarCHVpgqhrZ_y9xPZwhoxLYguuFEhEtxRDYg1m-iz81XULP-OiMWDNKjM-HnJHeqiWZnsIb1bOipdUPthF.jpg?r=d10",
@@ -89,15 +98,14 @@ export function Posts() {
   return (
     <div className="posts">
       {api_post.map((item) => (
-        <div className="posts">
-          <div className="post">
+          <div className="post" key={item.toString()}>
             <div className="menu">
               <div className="profile">
                 <img src={item.img_account} alt="" />
                 <div className="title">{item.name_account}</div>
               </div>
               <div>
-                <img className="more" src={ellipsisrt_post} alt="" />
+                <img className="more" src={ellipsisrt_post} alt="imagem para mais informações" />
               </div>
             </div>
             <img className="img_post" src={item.url_img} alt="imagem do post" />
@@ -114,12 +122,11 @@ export function Posts() {
             <div className="likes">
               <img src={item.img_liked} />
               <p>
-                Curtido por <strong>{item.name_liked}</strong> e{" "}
+                Curtido por <strong>{item.name_liked}</strong> e
                 <strong>outras 101.523 pessoas</strong>
               </p>
             </div>
           </div>
-        </div>
       ))}
     </div>
   );

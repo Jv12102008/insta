@@ -14,46 +14,57 @@ import vini from "./img/vini.jpeg";
 
 const api_storys = [
    {
+    id:1,
     title: "rafasimasguitarra",
     url_img: rafa,
   },
   {
+    id:2,
     title: "a2_pessoal",
     url_img: alex,
   },
   {
+    id:3,
     title: "Adriana",
     url_img: adriana,
   },
   {
+    id:4,
     title: "Mara",
     url_img: mara,
   },
   {
+    id:5,
     title: "Andre_Luiz",
     url_img: andre_luis,
   },
   {
+    id:6,
     title: "AndreLuiz",
     url_img: andreluiz,
   },
   {
+    id:7,
     title: "Andre-Luiz",
     url_img: andreluiz_,
   },
   {
+    id:8,
     title: "drileahy",
     url_img: adri_zig,
   },
   {
+    id:9,
     title: "guileahy09",
     url_img: zig,
   },
   {
+    id:10,
     title: "jaiminhomoedas",
     url_img: jaiminho,
   }, 
   {
+    id:11,
     title: "_vini.nery",
     url_img: vini,
   },
@@ -64,7 +75,7 @@ export function Story() {
   return (
     <div className="storys">
        {api_storys.map((item) => (
-<div>
+<div key={item.toString()}>
     <img className="story_img" src={item.url_img} /> 
     <h3 className="story_title">
         {item.title}
