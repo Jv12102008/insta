@@ -63,7 +63,7 @@ export function Recommended() {
           <div className="information">
             <div class="title">Sugestões para você</div>
             <strong>
-              <a>Ver tudo</a>
+              <a href="#">Ver tudo</a>
             </strong>
           </div>
 
@@ -80,7 +80,7 @@ export function Recommended() {
                 </div>
               </div>
               <strong>
-                <a>Seguir</a>
+                <a href="#">Seguir</a>
               </strong>
             </div>
           ))}
