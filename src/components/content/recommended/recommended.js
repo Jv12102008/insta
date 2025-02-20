@@ -50,7 +50,7 @@ export function Recommended() {
   return (
     <div className="recommended">
       <div id="profile">
-        <img src={joao} alt="" />
+        <img src={joao} alt="imagem do seu perfil" />
         <div className="information">
           <div className="title">
             <strong>joao_vitor081012</strong>{" "}
@@ -63,14 +63,14 @@ export function Recommended() {
           <div className="information">
             <div class="title">Sugestões para você</div>
             <strong>
-              <a href="">Ver tudo</a>
+              <a href="#">Ver tudo</a>
             </strong>
           </div>
 
           {api_recommended.map((item) => (
             <div class="suggestion" key={item.toString()}>
               <div className="profile">
-                <img src={item.url_img} alt="" />
+                <img src={item.url_img} alt="imagem de perfil"/>
                 <div className="informations">
                   <div className="nickname">
                     {" "}
@@ -80,7 +80,7 @@ export function Recommended() {
                 </div>
               </div>
               <strong>
-                <a href="">Seguir</a>
+                <a href="#">Seguir</a>
               </strong>
             </div>
           ))}

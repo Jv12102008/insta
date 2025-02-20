@@ -11,19 +11,19 @@ export function Footer() {
     <nav>
       <ul>
         <li>
-          <img className="icons" src={home_footer} alt="" />
+          <img className="icons" src={home_footer} alt="icon do footer" />
         </li>
         <li>
-          <img className="icons" src={search_footer} alt="" />
+          <img className="icons" src={search_footer} alt="icon do footer" />
         </li>
         <li>
-          <img className="icons" src={circle_footer} alt="" />
+          <img className="icons" src={circle_footer} alt="icon do footer" />
         </li>
         <li>
-          <img className="icons" src={heart_footer} alt="" />
+          <img className="icons" src={heart_footer} alt="icon do footer" />
         </li>
         <li>
-          <img className="icons" src={person_footer} alt="" />
+          <img className="icons" src={person_footer} alt="icon do footer" />
         </li>
       </ul>
     </nav>

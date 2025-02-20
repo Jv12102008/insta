@@ -76,7 +76,7 @@ export function Story() {
     <div className="storys">
        {api_storys.map((item) => (
 <div key={item.toString()}>
-    <img className="story_img" src={item.url_img} /> 
+    <img className="story_img" src={item.url_img} alt='imagem do perfil' /> 
     <h3 className="story_title">
         {item.title}
     </h3>

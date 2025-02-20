@@ -101,7 +101,7 @@ export function Posts() {
           <div className="post" key={item.toString()}>
             <div className="menu">
               <div className="profile">
-                <img src={item.img_account} alt="" />
+                <img src={item.img_account} alt="imagem do perfil" />
                 <div className="title">{item.name_account}</div>
               </div>
               <div>
@@ -120,7 +120,7 @@ export function Posts() {
               </div>
             </div>
             <div className="likes">
-              <img src={item.img_liked} />
+              <img src={item.img_liked} alt="imagem do perfil que curtiu o post"/>
               <p>
                 Curtido por <strong>{item.name_liked}</strong> e
                 <strong>outras 101.523 pessoas</strong>
